@@ -1,0 +1,85 @@
+
+
+
+
+
+
+
+
+/* hr {
+height:0.1cm;
+width: 49%;
+border-width:0;
+color:red;
+background-color:red;
+border: 1px solid black;
+border-radius: 10px;
+padding: 0px;
+margin: 1px;  
+
+} */
+/* hr {
+    position: relative;
+    border-width: 10px;
+    border-color: hsl(0, 0%, 20%) transparent;
+    height: 1px;
+    border-style: double;
+    width: 50%;
+
+  } */
+  /* hr{ 
+        border-radius: 40%;
+        width: 50;
+        height: 5px;   
+        background-color: red;
+    } */
+  
+  /* hr:before,
+  hr:after {
+    position: absolute;
+    /* bottom: 1px;
+    width: 1px;
+    height: 1px; */
+    /* display: block; */
+    /* border-width: 0 1px 11px 0;
+    border-color: hsl(0, 0%, 50%); */
+    /* border-style: double; */
+    /* box-sizing: border-box; */
+  
+  /* hr:before {
+    transform: translateZ(0) rotate(-45deg);
+    left: 21px;
+  }
+  hr:after {
+    transform: translateZ(0) rotate(135deg);
+    right: 21px;
+  } */
+/* background: repeating-linear-gradient(
+  180deg,
+  white 10px,
+  white 10px,
+  black 20px
+); */
+/* }
+#hr1{
+    width 48%;
+}
+hr:before{
+    
+    position: absolute;
+    top: 0; right: 0;
+    border-top: 80px solid white;
+    border-left: 80px solid red;
+    width: 0;
+} */
+
+ hr{
+    height: 15px;
+    width: 70%;
+    background-image: repeating-linear-gradient(black, white 20%, red 20%, yellow 20%);
+    border-radius: 10px;
+} 
+/* hr {
+    height: 200px;
+    background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+  } */

@@ -1,0 +1,312 @@
+<!--TASK 1-->
+<!DOCTYPE html>
+<html lang="ro">
+  
+<head>
+    <!--TASK 2-->
+    <meta charset="UTF-8">
+    <meta name="keywords" content="lego, jocuri, joc, timp liber, copii, legobin">
+    <meta name="description" content="Magazin de jocuri lego. Jocurile lego sunt pentru toata lumea!">
+   
+    <!--TASK 3-->
+    <title>LEGOBIN</title>
+    <%- include("../fragmente/head.ejs") %>
+
+
+   
+    </style> 
+</head>
+ <!--TASK 5-->
+<body>
+  
+    
+    <!-- <h3 id="DarkModetext">Dark Mode is OFF</h3>
+    <button onclick="darkMode()">Darkmode</button>
+    <button onclick="lightMode()">LightMode</button> -->
+    
+    <%- include("../fragmente/header.ejs") %>
+    <main>
+        
+   <!--TASK 7-->
+       <div id="grid-pagina">
+       
+        <section id="welcome">
+            <h2>Bine ati venit!</h2>
+            <p class="intro">Multumim ca ati ales magazinul nostru!</p>
+
+        </section>
+        <section id="calendar">
+            <h2>Calendar</h2>
+            <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin dolor non pretium aliquam. Sed sapien lectus, semper luctus orci eu, blandit molestie sem. Nulla facilisi. Curabitur mollis enim nulla, id pretium magna aliquet a. Etiam pulvinar orci eu lobortis imperdiet. Fusce pharetra ultricies magna eu placerat. Vestibulum hendrerit, turpis sit amet euismod facilisis, diam enim rutrum tortor, quis iaculis velit lectus in odio. Sed malesuada porttitor condimentum. Nunc eget lectus ac tortor posuere vestibulum efficitur at libero. Etiam molestie mattis mattis. Sed fermentum erat nec commodo lobortis. Vestibulum tincidunt venenatis felis quis gravida. In ultricies pharetra vulputate.
+
+                Duis hendrerit libero non lectus tempor, sit amet accumsan nisl scelerisque. Aenean tincidunt efficitur metus, sit amet rutrum orci feugiat non. Morbi sed diam quis lectus ullamcorper ultrices quis non nunc. Nullam vel nulla molestie, rhoncus nisi in, ultricies enim. Quisque dictum mollis mauris sed eleifend. Donec a ornare dolor. Aenean sagittis vitae risus tempor varius. Mauris sit amet arcu eu ipsum eleifend placerat. Aliquam quam sem, convallis sit amet ultrices sit amet, varius eu velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                
+                Fusce sagittis felis eu elementum semper. Morbi mattis, augue at fringilla posuere, metus eros tempus ligula, in dignissim ante dolor quis diam. Nam sit amet lacus nec risus ultrices iaculis. Duis posuere suscipit enim. Integer ut lacinia tellus. Nulla vitae neque sit amet eros tempor posuere. Phasellus magna elit, faucibus ac sodales quis, dictum non lectus. Integer consectetur felis lectus. Praesent sed dui dui. Curabitur tempor malesuada nibh vitae sagittis. Sed accumsan nulla tempor rutrum aliquet. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus volutpat lectus ac congue auctor. Vivamus est nulla, iaculis id lectus mollis, molestie rhoncus libero. Sed placerat metus non dui dignissim fermentum.
+                
+                Fusce eleifend sodales ante vitae pellentesque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut metus massa, tempor a sollicitudin sed, vulputate eget arcu. In hac habitasse platea dictumst. Vestibulum nec suscipit lectus. Pellentesque euismod mauris non ex gravida, vel ultricies lacus accumsan. Phasellus viverra, ligula a vestibulum convallis, sem massa pharetra leo, congue fringilla mi mi vel ex. Aenean eu nisl eu mi condimentum viverra.
+                
+                Aenean in mollis mi. Etiam ultrices in justo commodo facilisis. Fusce eleifend volutpat ornare. Vestibulum vel turpis turpis. Aenean in eleifend velit, eget semper ligula. Phasellus augue justo, ullamcorper vel enim non, accumsan ultrices lacus. Aliquam pulvinar luctus urna, ut consequat ex faucibus non.</p>
+
+        </section>
+
+       
+        
+        <section id="tabel">
+            <h2>Tabel</h2>
+            <p class="intro">Tabel</p>
+
+            <table width="100%" height="170px"> <!--border cellspacing="0">-->
+      
+          
+            <thead>
+                <tr>
+                    <th>Luni</th>
+                    <th>Marti</th>
+                    <th>Miercuri</th>
+                    <th>Joi</th>
+                    <th>Vineri</th>
+                    <th>Sambata</th>
+                    <th>Duminica</th>
+                </tr>
+            </thead>
+          
+            <tbody>
+                <tr>
+                    <td>8:00</td>
+                    <td>8:00</td>
+                    <td>8:00</td>
+                    <td>8:00</td>
+                    <td>8:00</td>
+                    <td colspan = "2">10:00</td>
+                    
+                </tr>
+                <tr>
+                    <td>Marvel</td>
+                    <td>DC </td>
+                    <td>Star-Wars </td>
+                    <td>Cars </td>
+                    <td>Puzzle day </td>
+                    <td>Special </td>
+                    <td>Special </td>
+                </tr>
+                <tr>
+                    <td>Copii 2+</td>
+                    <td>Copii 5+ </td>
+                    <td>Copii 7+ </td>
+                    <td>Copii 12+ </td>
+                    <td>Adulti </td>
+                    <td>Copii 2+ </td>
+                    <td>Copii 2+ </td>
+                </tr>
+            </tbody>
+          
+            <tfoot>
+                <tr>
+                    <td>22:00</td>
+                    <td>22:00</td>
+                    <td>22:00</td>
+                    <td>22:000</td>
+                    <td>22:00</td>
+                    <td colspan = "2">20:00</td>
+                    
+                </tr>
+            </tfoot>
+            
+            <caption> Orar saptamana aceasta</caption>
+        </table>
+        
+         <hr class="hr1">
+          
+
+        </section>
+
+        <section id="anunturi">
+            <h2>Anunturi</h2>
+            <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin dolor non pretium aliquam. Sed sapien lectus, semper luctus orci eu, blandit molestie sem. Nulla facilisi. Curabitur mollis enim nulla, id pretium magna aliquet a. Etiam pulvinar orci eu lobortis imperdiet. Fusce pharetra ultricies magna eu placerat. Vestibulum hendrerit, turpis sit amet euismod facilisis, diam enim rutrum tortor, quis iaculis velit lectus in odio. Sed malesuada porttitor condimentum. Nunc eget lectus ac tortor posuere vestibulum efficitur at libero. Etiam molestie mattis mattis. Sed fermentum erat nec commodo lobortis. Vestibulum tincidunt venenatis felis quis gravida. In ultricies pharetra vulputate.
+
+                Duis hendrerit libero non lectus tempor, sit amet accumsan nisl scelerisque. Aenean tincidunt efficitur metus, sit amet rutrum orci feugiat non. Morbi sed diam quis lectus ullamcorper ultrices quis non nunc. Nullam vel nulla molestie, rhoncus nisi in, ultricies enim. Quisque dictum mollis mauris sed eleifend. Donec a ornare dolor. Aenean sagittis vitae risus tempor varius. Mauris sit amet arcu eu ipsum eleifend placerat. Aliquam quam sem, convallis sit amet ultrices sit amet, varius eu velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                
+                Fusce sagittis felis eu elementum semper. Morbi mattis, augue at fringilla posuere, metus eros tempus ligula, in dignissim ante dolor quis diam. Nam sit amet lacus nec risus ultrices iaculis. Duis posuere suscipit enim. Integer ut lacinia tellus. Nulla vitae neque sit amet eros tempor posuere. Phasellus magna elit, faucibus ac sodales quis, dictum non lectus. Integer consectetur felis lectus. Praesent sed dui dui. Curabitur tempor malesuada nibh vitae sagittis. Sed accumsan nulla tempor rutrum aliquet. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus volutpat lectus ac congue auctor. Vivamus est nulla, iaculis id lectus mollis, molestie rhoncus libero. Sed placerat metus non dui dignissim fermentum.
+                
+                Fusce eleifend sodales ante vitae pellentesque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut metus massa, tempor a sollicitudin sed, vulputate eget arcu. In hac habitasse platea dictumst. Vestibulum nec suscipit lectus. Pellentesque euismod mauris non ex gravida, vel ultricies lacus accumsan. Phasellus viverra, ligula a vestibulum convallis, sem massa pharetra leo, congue fringilla mi mi vel ex. Aenean eu nisl eu mi condimentum viverra.
+                
+                Aenean in mollis mi. Etiam ultrices in justo commodo facilisis. Fusce eleifend volutpat ornare. Vestibulum vel turpis turpis. Aenean in eleifend velit, eget semper ligula. Phasellus augue justo, ullamcorper vel enim non, accumsan ultrices lacus. Aliquam pulvinar luctus urna, ut consequat ex faucibus non.</p>
+
+        </section>
+
+        <section id="continut">
+            <h2>Continut</h2>
+            <p class="intro">Continut</p>
+
+        </section>
+
+        <section id="date_site">
+            <h2>Date Site</h2>
+            <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin dolor non pretium aliquam. Sed sapien lectus, semper luctus orci eu, blandit molestie sem. Nulla facilisi. Curabitur mollis enim nulla, id pretium magna aliquet a. Etiam pulvinar orci eu lobortis imperdiet. Fusce pharetra ultricies magna eu placerat. Vestibulum hendrerit, turpis sit amet euismod facilisis, diam enim rutrum tortor, quis iaculis velit lectus in odio. Sed malesuada porttitor condimentum. Nunc eget lectus ac tortor posuere vestibulum efficitur at libero. Etiam molestie mattis mattis. Sed fermentum erat nec commodo lobortis. Vestibulum tincidunt venenatis felis quis gravida. In ultricies pharetra vulputate.
+
+                Duis hendrerit libero non lectus tempor, sit amet accumsan nisl scelerisque. Aenean tincidunt efficitur metus, sit amet rutrum orci feugiat non. Morbi sed diam quis lectus ullamcorper ultrices quis non nunc. Nullam vel nulla molestie, rhoncus nisi in, ultricies enim. Quisque dictum mollis mauris sed eleifend. Donec a ornare dolor. Aenean sagittis vitae risus tempor varius. Mauris sit amet arcu eu ipsum eleifend placerat. Aliquam quam sem, convallis sit amet ultrices sit amet, varius eu velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                
+                Fusce sagittis felis eu elementum semper. Morbi mattis, augue at fringilla posuere, metus eros tempus ligula, in dignissim ante dolor quis diam. Nam sit amet lacus nec risus ultrices iaculis. Duis posuere suscipit enim. Integer ut lacinia tellus. Nulla vitae neque sit amet eros tempor posuere. Phasellus magna elit, faucibus ac sodales quis, dictum non lectus. Integer consectetur felis lectus. Praesent sed dui dui. Curabitur tempor malesuada nibh vitae sagittis. Sed accumsan nulla tempor rutrum aliquet. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus volutpat lectus ac congue auctor. Vivamus est nulla, iaculis id lectus mollis, molestie rhoncus libero. Sed placerat metus non dui dignissim fermentum.
+                
+                Fusce eleifend sodales ante vitae pellentesque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut metus massa, tempor a sollicitudin sed, vulputate eget arcu. In hac habitasse platea dictumst. Vestibulum nec suscipit lectus. Pellentesque euismod mauris non ex gravida, vel ultricies lacus accumsan. Phasellus viverra, ligula a vestibulum convallis, sem massa pharetra leo, congue fringilla mi mi vel ex. Aenean eu nisl eu mi condimentum viverra.
+                
+                Aenean in mollis mi. Etiam ultrices in justo commodo facilisis. Fusce eleifend volutpat ornare. Vestibulum vel turpis turpis. Aenean in eleifend velit, eget semper ligula. Phasellus augue justo, ullamcorper vel enim non, accumsan ultrices lacus. Aliquam pulvinar luctus urna, ut consequat ex faucibus non.</p>
+
+        </section>
+
+        <section id="utilizatori">
+            <h2>Utilizatori</h2>
+            <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin dolor non pretium aliquam. Sed sapien lectus, semper luctus orci eu, blandit molestie sem. Nulla facilisi. Curabitur mollis enim nulla, id pretium magna aliquet a. Etiam pulvinar orci eu lobortis imperdiet. Fusce pharetra ultricies magna eu placerat. Vestibulum hendrerit, turpis sit amet euismod facilisis, diam enim rutrum tortor, quis iaculis velit lectus in odio. Sed malesuada porttitor condimentum. Nunc eget lectus ac tortor posuere vestibulum efficitur at libero. Etiam molestie mattis mattis. Sed fermentum erat nec commodo lobortis. Vestibulum tincidunt venenatis felis quis gravida. In ultricies pharetra vulputate.
+
+                Duis hendrerit libero non lectus tempor, sit amet accumsan nisl scelerisque. Aenean tincidunt efficitur metus, sit amet rutrum orci feugiat non. Morbi sed diam quis lectus ullamcorper ultrices quis non nunc. Nullam vel nulla molestie, rhoncus nisi in, ultricies enim. Quisque dictum mollis mauris sed eleifend. Donec a ornare dolor. Aenean sagittis vitae risus tempor varius. Mauris sit amet arcu eu ipsum eleifend placerat. Aliquam quam sem, convallis sit amet ultrices sit amet, varius eu velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                
+                Fusce sagittis felis eu elementum semper. Morbi mattis, augue at fringilla posuere, metus eros tempus ligula, in dignissim ante dolor quis diam. Nam sit amet lacus nec risus ultrices iaculis. Duis posuere suscipit enim. Integer ut lacinia tellus. Nulla vitae neque sit amet eros tempor posuere. Phasellus magna elit, faucibus ac sodales quis, dictum non lectus. Integer consectetur felis lectus. Praesent sed dui dui. Curabitur tempor malesuada nibh vitae sagittis. Sed accumsan nulla tempor rutrum aliquet. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus volutpat lectus ac congue auctor. Vivamus est nulla, iaculis id lectus mollis, molestie rhoncus libero. Sed placerat metus non dui dignissim fermentum.
+                
+                Fusce eleifend sodales ante vitae pellentesque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut metus massa, tempor a sollicitudin sed, vulputate eget arcu. In hac habitasse platea dictumst. Vestibulum nec suscipit lectus. Pellentesque euismod mauris non ex gravida, vel ultricies lacus accumsan. Phasellus viverra, ligula a vestibulum convallis, sem massa pharetra leo, congue fringilla mi mi vel ex. Aenean eu nisl eu mi condimentum viverra.
+                
+                Aenean in mollis mi. Etiam ultrices in justo commodo facilisis. Fusce eleifend volutpat ornare. Vestibulum vel turpis turpis. Aenean in eleifend velit, eget semper ligula. Phasellus augue justo, ullamcorper vel enim non, accumsan ultrices lacus. Aliquam pulvinar luctus urna, ut consequat ex faucibus non.</p>
+
+
+                
+        </section>
+
+        <section id="date_utilizatori">
+            <h2>Date ulitizatori</h2>
+            <p class="intro"> 
+                <%- "Ip-ul dumneavoastra este: "+ locals.ip %>
+                <%- locals.a %>
+                <%- locals.b %>
+            
+            </p>
+
+
+            <%
+            dataServer=new Date();
+            sirData=dataServer.getHours()+":"+dataServer.getMinutes()+":"+dataServer.getSeconds()
+
+            %>
+            <p>Pe localhost vor fi identice; se va observa diferența pe Heroku</p>
+            <p>Ora server:<span id="data_server"><%= sirData %></span></p>
+            <p>Ora client:<span id="data_client"></span></p>
+            <script>
+                function zero(nr){
+                    if (nr<10) return "0"+nr;
+                    return nr;
+                }
+                
+                d=new Date()
+                document.getElementById("data_client").innerHTML=zero(d.getHours())+":"+zero(d.getMinutes())+":"+zero(d.getSeconds());
+
+                function actualizeazaElemData(id_div){
+                    var data_div=document.getElementById(id_div);
+                    if (data_div.innerHTML!="")
+                    {
+                        var timp=data_div.innerHTML.split(":")
+                        var dt=new Date(2000,1,15, timp[0],timp[1], timp[2] );//nu conteaza data (am pus valori random pentru an, luna si zi) ci timpul
+                    }
+                    else
+                        var dt=new Date();
+                    dt.setSeconds(dt.getSeconds()+1)
+                    data_div.innerHTML=zero(dt.getHours())+":"+zero(dt.getMinutes())+":"+zero(dt.getSeconds());
+                }
+                function actualizeazaData(){
+                    actualizeazaElemData("data_client");
+                    actualizeazaElemData("data_server");
+                }
+                actualizeazaData()
+                setInterval(actualizeazaData,1000)
+            </script>
+        </section>
+
+        
+        <section id="promotii">
+            <h2>Promotii!</h2>
+            <article>
+                <h3>Super oferta de black friday</h3>
+                <!--TASK 10 e)-->
+                <p><s>Magazinul nostru are reduceri de 10% la orice produs achizitionat vinerea.</s></p>
+                <p><ins>Magazinul nostru are reduceri de 20% la orice produs achizitionat vinerea.</ins></p>
+                <!--TASK 12-->
+                <details>
+                    <summary>Detalii</summary>
+                    Oferta este valabila pe tot parcursul lunii noiembrie, doar vinerea.
+                </details>
+            </article>
+        </section>
+        <section id="intrebari">
+            <h2>Pune-ne o intrebare!</h2>
+        
+        </section>
+        <section id="prezentare">
+            <!--TASK 10 a)-->
+            <h2>Bine ai venit in magazinul nostru!  </h2>
+            <p><b>Jocurile</b> <b>lego</b> sunt atat pentru <b>copii</b>, cat si pentru adulti. Noi incercam sa bucuram pe toata lumea cu ajutorul acestora. Ocupa-ti <b>timpul</b> liber distrandu-te cu un <b>joc</b> de <b>lego</b>!</p>
+            <p>In magazinul nostru veti gasi tot felul de jocuri <b>lego</b>, pentru toate varstele, de la dificultate usoara, pana la dificultate grea.  </p>
+            <!--TASK 11-->
+            <p>Magazinul este asociat cu: <a href="https://lego.com" target="_blank">LEGO.COM</a> </p>
+        </section>
+        
+        <section id="noutati">
+            <h2>Aici veti gasi ultimele noutati despre jocurile lego!</h2>
+            <p>In aceasta sectiune veti afla despre noile jocuri de lego aparute, evenimente organizate de magazinul nostru si multe altele.</p>
+        </section>
+        <section id="galerie-statica">
+            <h2>Galerie</h2>
+            <div id="grid-galerie">
+                <% for (let imag of locals.imagini)
+                { %>
+                 <figure>
+                     <picture>
+                            <source srcset="/<%- imag.mic %>" media="(max-width:700px)"/>
+                            <img src="/<%- locals.cale +"/"+ imag.fisier %>" alt="text"/>
+                        </picture>
+                        <figcaption> <%- imag.descriere %> </figcaption>
+                 </figure>
+                 <% } %>          
+            
+            </div>
+             
+        </section>
+        <section id="tema">
+            <h2>Seturi dupa tema</h2>
+            <ul>
+                <li>Disney</li>
+                <li>Clasic</li>
+                <li>DC</li>
+                <li>Marvel</li>
+                <li>City</li>
+                <iframe class="frame" name="iframe" width="100%" height="500" src="https://www.youtube.com/embed/29WOrgRakXQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               
+            
+            </ul>
+            <div class="flex-container">
+                <a href="https://www.youtube.com/embed/29WOrgRakXQ" target="iframe"><button class="button-iframe">Disney</button></a>
+                <a href="https://www.youtube.com/embed/AOPNekHbWQM" target="iframe"><button class="button-iframe">Clasic</button></a>
+                <a><button class="button-iframe">Marvel</button> </a>
+            </div>
+            <!--TASK 11 IFRAME-->
+            
+            
+        </section>
+
+        <section id="varsta">
+            <!--TASK 8-->
+            <h2>Categorii de varsta:</h2>
+            <ul>
+                <li>2+</li>
+                <li>4+</li>
+                <li>6+</li>
+                <li>9+</li>
+                <li>13+</li>
+                <li>18+</li>
+                <!--le pun hyperlink catre produse-->
+            </ul>
+             <!--TASK 10 c)-->
+            <p><strong>Atentie! Produsele sunt impartite pe categorie de varsta in functie de dificultate. Pentru copii mici se recomanda cumpararea produselor strict pentru varsta lor, deoarece acestea pot avea piese mici pe care copii le pot inghiti.</strong> </p>
+        </section>
+    
+             </div>
+    </main>
+    <%- include("../fragmente/footer.ejs") %>
+</body>
+</html>

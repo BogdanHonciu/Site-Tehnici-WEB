@@ -1,0 +1,69 @@
+html{
+    font-size:16px;
+}
+
+  
+body{
+    --culoare-lime:#AAFA0F;
+	--culoare-verde:#5AFD0F;
+	--culoare-verde-inchis:#7CE01B;
+    --culoare-bej:#D8E0A8;
+    --culoare-galben:#FDFC0F;
+    --cl-text:black;
+}   
+
+#grid-pagina {
+
+    display: grid;
+    grid-template-areas: "welcome   welcome  welcome welcome"
+        "calendar tabel tabel  anunturi"
+        "continut     continut   continut continut"
+        "date_site   date_site  utilizatori   date_utilizatori";
+    
+    padding:var(--padding-intern);
+
+        /*spatiu intre celulele de grid*/
+        grid-gap:1rem;
+}
+
+#grid-pagina section{   
+    outline:1px solid var(--culoare-bej);
+    border:10px dotted var(--culoare-verde-inchis);
+    padding:1rem;
+}
+
+#welcome {
+    grid-area: welcome;
+}
+
+#tabel {
+    grid-area: tabel;
+}
+
+#calendar {
+    grid-area: calendar;
+}
+
+#anunturi {
+    grid-area: anunturi;
+}
+
+#utilizatori {
+    grid-area: utilizatori;
+}
+
+#date_utilizatori {
+    grid-area: date_utilizatori;
+}
+
+#date_site {
+    grid-area: date_site;
+}
+
+#continut {
+    grid-area: continut;
+}
+/* calculez marimea fontului in functie de viewport*/
+body {
+    font-size: calc(0.8em + 1vw);
+}

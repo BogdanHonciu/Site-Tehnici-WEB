@@ -1,0 +1,159 @@
+@charset "UTF-8";
+@import "schema cromatica.css";
+
+
+body{
+    --inaltime-meniu:3rem;
+}
+nav{
+   
+    height:var(--inaltime-meniu);
+    width:100%;
+    top:0;
+    padding:0;
+    background: var(--background_gri);
+    z-index:10;
+    /*ca sa fie pozitionat normal in partea de sus a containerului, sub sigla, 
+    dar apoi cand dam scroll sa ramana fix pe ecran*/
+    position:sticky;
+   
+}
+nav ul,
+nav li{
+    padding: 0;
+    margin: 0;
+}
+nav ul.meniu ul{
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index:200;
+}
+
+nav ul.meniu > li{
+    float: left;
+    width: 150px;
+    position: relative;
+}
+
+nav ul.meniu>li ul{
+    position:absolute;
+    width:100%;
+    z-index:200;
+}
+
+nav ul.meniu > li {
+    transition: box-shadow 0.5s linear;
+}
+nav ul.meniu > li :hover{
+    box-shadow: 0px 0px 10px white inset;
+}
+nav ul.meniu > li li :before {
+    display: inline-block;
+    content: "￫";
+    color: white;
+    transform: translateX(-30px);
+    transition: transform 0.5s ease;
+    color: #444;
+}
+nav ul.meniu>li:hover>ul{
+	display:block;
+    animation-name: aparitie_meniu;
+    animation-iteration-count:1;
+    animation-duration:0.7s;
+    animation-fill-mode:forwards;
+    animation-timing-function:linear;
+    transform-origin: 50% 0;
+}
+ /* animatia sagetica*/
+nav ul.meniu> li li :hover:before {
+    transform: translateX(0px);
+    color: #fff;
+}
+
+nav ul.meniu li {
+    text-align:center;
+    list-style-type: none;
+    background: #444;
+    cursor: pointer;
+
+}
+
+nav ul.meniu li a,
+nav ul.meniu li div {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-weight: normal;
+    height: 3rem;
+    line-height: 3rem;
+    outline: 1px solid black;
+}
+nav ul.meniu a,
+nav ul.meniu div{
+    transition: background 700ms linear;
+}
+nav ul.meniu a:hover, 
+nav ul.meniu div:hover{
+    background: black;
+
+}
+@media only screen and (max-width: 900px)
+{
+    nav{
+        font-size: 0.80rem;
+    }
+}
+
+#hamburger{
+    display: none;
+    height: 3rem;
+}
+
+#ch-menu{
+    display: none;
+}
+#hamburger img{
+    height: 100%;
+    width: auto;
+}
+@keyframes aparitie_meniu {
+    0%{
+        opacity: 0;
+        transform: scale(0,0);
+    }
+    50%{
+        transform: scale(0,1);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+/* #fa-sharp fa-solid fa-house{
+    display: none;
+} 
+/* @media only screen and (max-width: 900px){
+    #fa-sharp fa-solid fa-house{
+        display:block;
+    }
+} */
+
+#grid-pagina{
+    display: grid;
+    grid-template-areas:
+    "welcome"
+    "calendar"
+    "tabel"
+    "anunturi"
+    "continut"
+    "date_site" 
+    "utilizatori" 
+    "date_utilizatori";
+    font-size: 0.85rem;
+    transition: none; 
+
+}
+body {
+    font-size: calc(0.8em + 1vw);
+}

@@ -1,0 +1,35 @@
+#tabel2{
+    caption-side: bottom;
+    text-align: center;
+    border-collapse: collapse;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+/* tr td:nth-child(1), tr th:nth-child(1),
+tr td:nth-child(3), tr th:nth-child(3),
+tr td:nth-child(5), tr th:nth-child(5),
+tr td:nth-child(7), tr th:nth-child(7)
+{ 
+  background: greenyellow;
+} */
+/* tr td:nth-child(2), tr th:nth-child(2),
+tr td:nth-child(4), tr th:nth-child(4),
+tr td:nth-child(6), tr th:nth-child(6) {
+  background: orange;
+} */
+
+#tabel td:nth-child(even){
+    background: greenyellow;
+}
+#tabel td:nth-child(odd){
+    background: orange;
+}
+
+#tabel th:nth-child(even){
+    background: greenyellow;
+}
+#tabel th:nth-child(odd){
+    background: orange;
+}

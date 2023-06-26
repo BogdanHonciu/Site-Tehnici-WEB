@@ -1,0 +1,74 @@
+@import "schema cromatica.css";
+body{
+    margin-top: 0;
+    margin-bottom: 0;
+    --body-padding: 3rem;
+    --padding-intern:4%;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 0 var(--body-padding);
+    min-width: 330px;
+}
+h1{
+    font-size: 3rem;
+    text-shadow:0 px 0 px 1 px black, 0px 0px 2px black, 0px, 0px, 4px white;
+
+}
+main{
+    --main-border: 1px solid grey;
+    background: white;
+    border-left: var(--main-border);
+    border-right:var(--main-border);
+    padding-bottom: 2rem;
+
+}
+header{
+    font-size: 3rem;
+    font-family: 'Courier New', cursive;
+    font-weight: bold;
+    color: var(--culoare_orange);
+    text-align: center;
+    margin: 1rem 0;
+}
+
+footer{
+    text-align: center;
+    background-color: var(--background_verde2);
+    color:white;
+    padding-left: var(--padding-intern);
+    padding-right: var(--padding-intern);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+.flex-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .button-iframe {
+    background-color: var(--culoare-verde2);
+    border: 1px solid var(--background_verde);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .button-iframe:hover {
+    background-color: #3e8e41;
+  }
+  
+  .frame {
+    border: 10px solid green;
+  }
+
+
+  #watermark{
+    display: none;
+} 

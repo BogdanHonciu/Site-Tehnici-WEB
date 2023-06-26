@@ -1,0 +1,181 @@
+<!--TASK 1-->
+<!DOCTYPE html>
+<html lang="ro">
+  
+<head>
+    <!--TASK 2-->
+    <meta charset="UTF-8">
+    <meta name="keywords" content="lego, jocuri, joc, timp liber, copii, legobin">
+    <meta name="description" content="Magazin de jocuri lego. Jocurile lego sunt pentru toata lumea!">
+   
+    <!--TASK 3-->
+    <title>LEGOBIN</title>
+    <%- include("../fragmente/head.ejs") %>
+    <link href="/resurse/css/produs.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src=/resurse/js/produse.js></script>
+
+   
+</head>
+ <!--TASK 5-->
+<body>
+    <!-- <label> Text:
+		<input id="i_text" type="text" value="abc">
+	</label>
+	<label> Numar:
+		<input id="i_number" type="number" value="10">
+	</label>
+	<label> Parola:
+		<input id="i_parola" type="password">
+	</label>
+	<label for="i_range">
+		<input id="i_range" type="range" min="10" max="20" step="2" value="10">
+	</label>
+
+
+	<label>Checkbox1 (Initial bifat)
+		<input id="i_check1" name="gr_chck" checked value="10" type="checkbox"/>
+	</label>
+	
+	<label>Checkbox2 (Initial nebifat)
+		<input id="i_check2" name="gr_chck" value="20" type="checkbox"/>
+	</label>
+
+	<label>Checkbox3 (Initial bifat)
+		<input id="i_check3" name="gr_chck" checked value="30" type="checkbox"/>
+	</label>
+	<div> Grup de radiobuttons: trebuie sa aiba acelasi name ca sa formeze un grup 
+		<label>Rad1
+			<input id="i_rad1" checked name="gr_rad" value="1" type="radio"/>
+		</label>
+		<label>Rad2
+			<input id="i_rad2" name="gr_rad" value="2" type="radio"/>
+		</label>
+		<label>Rad3
+			<input id="i_rad3" name="gr_rad" value="3" type="radio"/>
+		</label>
+	</div>
+	
+
+	<label>Select simplu:
+		<select id="i_sel_simplu">
+			<option value="1">opt1</option>
+			<option value="2" selected>opt2</option>
+			<option value="3" >opt3</option>
+			<option value="4">opt4</option>
+			<option value="5">opt5</option>
+		</select>
+	</label>
+	<label>Select multiplu:
+		<select id="i_sel_multiplu" multiple size="4">
+			<option value="zahar">zahar</option>
+			<option value="2" selected>opt2</option>
+			<option value="3">opt3</option>
+			<option value="4" selected>opt4</option>
+			<option value="5">opt5</option>
+		</select>
+	</label>
+	<label>Datalist:
+		<input list="id_lista" id="i_datalist">
+		<datalist id="id_lista">
+			<option value="data1">Datalist 1</option>
+			<option value="data2">Datalist 2</option>
+			<option value="data3">Datalist 3</option>
+			<option value="abc1">Abc 1</option>
+			<option value="abc2">Abc 2</option>
+		</datalist>
+	</label>
+	<label>Textarea:
+		<textarea id="i_textarea">ceva in textarea</textarea>
+	</label>
+	<button id="preia">Preia valori</button>
+
+
+    <div id="d1">
+        <p id="unu">a</p>
+        <p >b</p>
+        <p >c</p>
+    </div>
+        <hr/>
+    <button id="b2">ok 2</button>
+    <p style="color:red">abc</p>
+    <label>Nume:
+        <input type="text" id="inp-nume">
+    </label><br/>
+    <label>Pret:
+        50<input type="range" id="val-ceva" min="50" max="700" value="50">700 
+    </label>
+    <button id="b1">ok 1</button>
+    <div id="container">
+        <article class="c1"><span class="nume">aa</span> <span class="ceva">100</span></article>
+        <article class="c1"><span class="nume">b</span> <span class="ceva">300</span></article>
+        <article class="c1"><span class="nume">c</span> <span class="ceva">200</span></article>
+        <article class="c1"><span class="nume">ad</span> <span class="ceva">500</span></article>
+        <article class="c1"><span class="nume">be</span> <span class="ceva">400</span></article>
+        
+        <article class="c1"><span class="nume">b</span> <span class="ceva">100</span></article>
+        
+        <article class="c1"><span class="nume">aa</span> <span class="ceva">400</span></article>
+    </div>
+    <button id="sortBtn">Sorteaza asc</button>
+    <button id="sortBtn2">Sorteaza desc</button>
+    
+    <button id="reseteaza">Reset</button> -->
+
+
+    <%- include("../fragmente/header") %>
+    <main>
+        <label> Nume:<input type="text"> </label>
+        <label> Varsta maxima: <input type="number" id="inp-varsta" value="100"> </label>
+        <label> Pret minim <input type="range" id="inp-pret" value="0" min="0" max="700"> </label>
+        <label>Select simplu:
+            <select id="inp-categorie">
+                <% for(let opt of locals.optiuni){ %>
+                        <option value="<%- opt %>"> <%- opt %> </option>
+               <% } %>
+            </select>
+
+        </label>
+        <p>
+            <button id="filtrare"> Filtreaza</button>
+            <button id="sortCrescNume"> Sorteaza crescator dupa nume si pret</button>
+            <button id="sortDescrescNume"> Sorteaza descrescator dupa nume si pret</button>
+            <button id="resetare"> Reseteaza</button>
+        </p>
+        
+        <p id="p-suma"> Apasati alt+"c" pentru suma preturilor produselor afisate. </p>
+        <section id="produse">
+         <h2>Pagina produse</h2>
+         <div class="grid-produse">
+            <% for(let prod of locals.produse){ %>           
+         <article class="produs">
+            <h3 class="nume">nume:<a href="/produs/<%-prod.id%>"><span class="val-nume"><%- prod.nume%></span></a></h3>
+            <div class="info-prod">
+                <p class="pret">Pret: <span class="val-pret"><%- prod.pret  %></span></p>
+                <p class="varsta">Varsta: <span class="val-varsta"><%- prod.varsta  %></span></p>
+                <p class="nivel_dificultate">Nivel dificultate: <span class="val-nivel_dificultate"><%- prod.nivel_dificultate  %></span></p>
+            </div>
+            
+            <p>Descriere: <span class="descriere"><%- prod.descriere  %></span></p>
+            <p>Continut piese: <span class="continut_piese"><%- prod.continut_piese  %></span></p>
+            
+            
+            <p class="categorie">Categorie: <span class="val-categorie"><%- prod.categorie  %></span></p>
+
+            <p class >In stock: <span class="stock"><%- prod.stock  %></span></p>
+            <p>Data adaugare: <span class="data_adaugare"><%- prod.data_adaugare  %></span></p>
+
+            <figure">
+               <img src="/resurse/imagini/produse/<%- prod.imagine %>" style="width:50%;height:auto;" alt="[imagine <%- prod.nume %>]" />
+            </figure>
+           <label class="selecteaza-cos">
+            Selecteaza: <br/>
+            <input type="checkbox" class="select-cos" value="<%-prod.id %>" autocomplete="off">
+         </article>
+            <% } %>
+        </div>
+        </section>
+       
+    </main>
+    <%- include("../fragmente/footer.ejs") %>
+</body>
+</html>

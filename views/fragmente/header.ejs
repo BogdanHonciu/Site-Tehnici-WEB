@@ -1,0 +1,86 @@
+<header>
+    <a id="top"></a>
+        <h1>LEGOBIN</h1>
+</header>       
+<!--TASK 6-->
+    <nav class="nav-main">
+
+        <label id="hamburger" for="ch-menu">
+            <img src="resurse/imagini/Hamburger_icon_alb.png" alt="menu">
+        </label>
+        
+    
+        <input id="ch-menu" type="checkbox">
+        <ul class="meniu">
+            
+            
+                    <li><div> <i class="fa-sharp fa-solid fa-house"></i> <span id="home">Acasa</span> </div>
+                        <ul>
+                            <li><a href="/index">Bine ati venit!</a></li>
+                            <li><a href="/welcome">Bine ati venit!</a></li>
+                            <li><a href="/promotii">Promotii</a></li>
+                            <li><a href="/intrebari">Intrebari</a></li>
+                        </ul>
+                    </li>
+                    <% if (!locals.utilizator) { %>
+                        <li><a href="/inregistrare" >Inregistrare</a></li>
+                    <% }  %>
+                    <li><div>Despre</div>
+                        <ul>
+                            <li><a href="/prezentare">Prezentare</a></li>
+                            <li><a href="/noutati">Noutati</a></li>
+                            <li><a href="/galerie">Galerie</a></li>
+                        </ul>
+                    </li>
+                
+                    <li><div>Stuff</div>
+                        <ul>
+                            <li><a href="#tema">Seturi dupa tema</a></li>
+                            <li><a href="#varsta">Grupe de varsta</a></li>
+                        </ul>
+                    </li>
+                    <% if (locals.utilizator && locals.utilizator.rol=="admin") { %> 
+                        <li><a href="/useri">Utilizatori</a></li>
+                    <% } %>
+                    <li><div>Produse</div>
+                        <ul>
+                            <li><a href="/produse">Toate</a></li>
+                            <li><a href="/produse?tip=lego">Lego</a></li>
+                            <li><a href="/produse?tip=puzzle">Puzzle</a></li>
+                            <li><a href="/produse?tip=figurina">Figurina</a></li>
+                            <li><a href="/produse?tip=plush">Plush</a></li>
+                        </ul>
+                    </li>
+                 <li><a href="/cos-virtual">Cos virtual</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <% if (locals.utilizator) { %>
+                    <li><a href="/profil"><%- locals.utilizator.username %></a></li>
+                    <li><a href="/logout">Logout</a></li>
+                <% }  %>
+                <li><div> <i class="fa fa-question-circle"></i>Ajutor</div>
+                    <!-- <a href="">Ajutor</a></li> -->
+            
+            
+    
+            <!--</li>
+            <li><div>Despre</div>
+                <ul>
+               <li><a href="#prezentare">Prezentare</a></li>
+                    <li><a href="#noutati">Noutati</a></li>
+                    <li><a href="galerie">Galerie</a></li> 
+                </ul>
+            </li>
+        
+            <li><div>Produse</div>
+                <ul>
+                  <li><a href="#tema">Seturi dupa tema</a></li>
+                    <li><a href="#varsta">Grupe de varsta</a></li>  
+                </ul>
+            </li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Ajutor</a></li>-->
+        </ul>
+    </nav>
+    <!--<label for="nav-close" class="nav-close"></label>-->
+    <!-- <input type="radio" class="nav-close-option" name="nav-group" id="nav-close"> -->
+    <!--<div class="content"></div>-->

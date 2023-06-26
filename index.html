@@ -1,0 +1,375 @@
+<!--TASK 1-->
+<!DOCTYPE html>
+<html lang="ro">
+  
+<head>
+    <!--TASK 2-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="lego, jocuri, joc, timp liber, copii, legobin">
+    <meta name="description" content="Magazin de jocuri lego. Jocurile lego sunt pentru toata lumea!">
+    <meta name="author" content="Honciu Bogdan-Cristian">
+    <!--TASK 3-->
+    <title>LEGOBIN</title>
+    <!--TASK 4-->
+    <link rel="shortcut icon" href="./favicon2.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="resurse/css/layout.css" type="text/css" />
+    <!--<link rel="stylesheet" href="resurse/css/app.css" type="text/css" />-->
+    <!--<link rel="stylesheet" href="resurse/css/layout.css" type="text/css" />-->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+    <!--<link rel="stylesheet" href="resurse/css/2-arrow-hover.css" type="text/css" />-->
+    <!--<link rel="stylesheet" href="resurse/css/schema cromatica.css" type="text/css" />-->
+    <!-- <script src="https://kit.fontawesome.com/01bbef70ee.js" crossorigin="anonymous"></script>-->
+    <link rel="stylesheet" href="resurse/css/meniu.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <!-- <style>
+       body{
+                --inalt-meniu:2rem;
+            }
+            nav{
+                height:var(--inalt-meniu);
+                width:100%;
+                background-color: aqua;
+                position:fixed;
+                top:0;
+                left:0;
+                z-index: 2;
+
+            }
+            nav ul, nav li, nav a,nav{
+                padding:0;
+                margin:0;
+            }
+            ul.meniu li{          
+            box-sizing: border-box;
+            width:120px;
+            text-align: center;
+            list-style-type: none;
+            height:var(--inalt-meniu);
+            float:left;
+            }
+            ul.meniu ul{
+                display:none;
+            } 
+            ul.meniu>li>div{
+                z-index: 2;
+                position: relative;
+            }
+            ul.meniu>li>ul{
+                z-index: 1;
+                position: relative;
+            }
+            ul.meniu li:hover ul{
+                display: block;
+                
+                position: relative;
+                transform-origin: 0 0;
+                animation-name: subm;
+                animation-timing-function: linear;
+                animation-duration: 1s;
+                animation-fill-mode: forwards;
+                animation-iteration-count: 1;
+            }
+            ul.meniu li:hover>a,ul.meniu li:hover>div{
+                background-color:cadetblue;
+            }
+            ul.meniu li a{
+                
+                
+                display:block;
+            }
+            ul.meniu li a, ul.meniu li div{
+                cursor:pointer;
+                background-color: aqua;
+                width:100%;
+                height:100%;
+                transition:all 1s linear;
+                box-sizing: border-box;
+                outline:1px solid black;  
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+                padding:5px;
+            }
+
+            #hamburger{
+                display:none;
+            }
+            #ch-menu{
+                display:none;
+            }
+            h1{
+                padding-top:100px;
+            }
+            @keyframes subm{
+                0%{
+                    opacity: 0;
+                    transform:scale(0,0);
+                }
+                100%{
+                    opacity: 1;
+                    
+                    transform:scale(1,1);
+                }
+            }
+    </style> -->
+</head>
+ <!--TASK 5-->
+<body>
+    
+
+
+    <header>
+        <a id="top"></a>
+        <h1>LEGOBIN</h1>
+        <!--TASK 6-->
+    </header>
+        <nav class="nav-main">
+            
+            <label id="hamburger" for="ch-menu">
+                <img src="resurse/imagini/Hamburger_icon_alb.png" alt="menu">
+            </label>
+        
+            <input id="ch-menu" type="checkbox">
+            <ul class="meniu">
+                
+                
+                        <li><div>Acasa</div>
+                            <ul>
+                                <li><a href="#welcome">Bine ati venit!</a></li>
+                                <li><a href="#promotii">Promotii</a></li>
+                                <li><a href="#intrebari">Intrebari</a></li>
+                            </ul>
+                        </li>
+                        <li><div>Despre</div>
+                            <ul>
+                                <li><a href="#prezentare">Prezentare</a></li>
+                                <li><a href="#noutati">Noutati</a></li>
+                                <li><a href="galerie">Galerie</a></li>
+                            </ul>
+                        </li>
+                    
+                        <li><div>Produse</div>
+                            <ul>
+                                <li><a href="#tema">Seturi dupa tema</a></li>
+                                <li><a href="#varsta">Grupe de varsta</a></li>
+                            </ul>
+                        </li>
+                    <li><a href="">Contact</a></li>
+                    
+                    <li><a href="">Ajutor</a></li>
+                
+                
+        
+                <!--</li>
+                <li><div>Despre</div>
+                    <ul>
+                   <li><a href="#prezentare">Prezentare</a></li>
+                        <li><a href="#noutati">Noutati</a></li>
+                        <li><a href="galerie">Galerie</a></li> 
+                    </ul>
+                </li>
+            
+                <li><div>Produse</div>
+                    <ul>
+                      <li><a href="#tema">Seturi dupa tema</a></li>
+                        <li><a href="#varsta">Grupe de varsta</a></li>  
+                    </ul>
+                </li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Ajutor</a></li>-->
+            </ul>
+        </nav>
+        <!--<label for="nav-close" class="nav-close"></label>-->
+        <!--<input type="radio" class="nav-close-option" name="nav-group" id="nav-close">-->
+        <!--<div class="content"></div>-->
+    
+    
+    <main>
+        
+        <!--TASK 7-->
+       <div id="grid-pagina">
+       
+        <section id="welcome">
+            <h2>Bine ati venit!</h2>
+            <p class="intro">Multumim ca ati ales magazinul nostru!</p>
+
+        </section>
+        <section id="calendar">
+            <h2>Calendar</h2>
+            <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin dolor non pretium aliquam. Sed sapien lectus, semper luctus orci eu, blandit molestie sem. Nulla facilisi. Curabitur mollis enim nulla, id pretium magna aliquet a. Etiam pulvinar orci eu lobortis imperdiet. Fusce pharetra ultricies magna eu placerat. Vestibulum hendrerit, turpis sit amet euismod facilisis, diam enim rutrum tortor, quis iaculis velit lectus in odio. Sed malesuada porttitor condimentum. Nunc eget lectus ac tortor posuere vestibulum efficitur at libero. Etiam molestie mattis mattis. Sed fermentum erat nec commodo lobortis. Vestibulum tincidunt venenatis felis quis gravida. In ultricies pharetra vulputate.
+
+                Duis hendrerit libero non lectus tempor, sit amet accumsan nisl scelerisque. Aenean tincidunt efficitur metus, sit amet rutrum orci feugiat non. Morbi sed diam quis lectus ullamcorper ultrices quis non nunc. Nullam vel nulla molestie, rhoncus nisi in, ultricies enim. Quisque dictum mollis mauris sed eleifend. Donec a ornare dolor. Aenean sagittis vitae risus tempor varius. Mauris sit amet arcu eu ipsum eleifend placerat. Aliquam quam sem, convallis sit amet ultrices sit amet, varius eu velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                
+                Fusce sagittis felis eu elementum semper. Morbi mattis, augue at fringilla posuere, metus eros tempus ligula, in dignissim ante dolor quis diam. Nam sit amet lacus nec risus ultrices iaculis. Duis posuere suscipit enim. Integer ut lacinia tellus. Nulla vitae neque sit amet eros tempor posuere. Phasellus magna elit, faucibus ac sodales quis, dictum non lectus. Integer consectetur felis lectus. Praesent sed dui dui. Curabitur tempor malesuada nibh vitae sagittis. Sed accumsan nulla tempor rutrum aliquet. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus volutpat lectus ac congue auctor. Vivamus est nulla, iaculis id lectus mollis, molestie rhoncus libero. Sed placerat metus non dui dignissim fermentum.
+                
+                Fusce eleifend sodales ante vitae pellentesque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut metus massa, tempor a sollicitudin sed, vulputate eget arcu. In hac habitasse platea dictumst. Vestibulum nec suscipit lectus. Pellentesque euismod mauris non ex gravida, vel ultricies lacus accumsan. Phasellus viverra, ligula a vestibulum convallis, sem massa pharetra leo, congue fringilla mi mi vel ex. Aenean eu nisl eu mi condimentum viverra.
+                
+                Aenean in mollis mi. Etiam ultrices in justo commodo facilisis. Fusce eleifend volutpat ornare. Vestibulum vel turpis turpis. Aenean in eleifend velit, eget semper ligula. Phasellus augue justo, ullamcorper vel enim non, accumsan ultrices lacus. Aliquam pulvinar luctus urna, ut consequat ex faucibus non.</p>
+
+        </section>
+        
+        <section id="tabel">
+            <h2>Tabel</h2>
+            <p class="intro">Tabel</p>
+
+        </section>
+
+        <section id="anunturi">
+            <h2>Anunturi</h2>
+            <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin dolor non pretium aliquam. Sed sapien lectus, semper luctus orci eu, blandit molestie sem. Nulla facilisi. Curabitur mollis enim nulla, id pretium magna aliquet a. Etiam pulvinar orci eu lobortis imperdiet. Fusce pharetra ultricies magna eu placerat. Vestibulum hendrerit, turpis sit amet euismod facilisis, diam enim rutrum tortor, quis iaculis velit lectus in odio. Sed malesuada porttitor condimentum. Nunc eget lectus ac tortor posuere vestibulum efficitur at libero. Etiam molestie mattis mattis. Sed fermentum erat nec commodo lobortis. Vestibulum tincidunt venenatis felis quis gravida. In ultricies pharetra vulputate.
+
+                Duis hendrerit libero non lectus tempor, sit amet accumsan nisl scelerisque. Aenean tincidunt efficitur metus, sit amet rutrum orci feugiat non. Morbi sed diam quis lectus ullamcorper ultrices quis non nunc. Nullam vel nulla molestie, rhoncus nisi in, ultricies enim. Quisque dictum mollis mauris sed eleifend. Donec a ornare dolor. Aenean sagittis vitae risus tempor varius. Mauris sit amet arcu eu ipsum eleifend placerat. Aliquam quam sem, convallis sit amet ultrices sit amet, varius eu velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                
+                Fusce sagittis felis eu elementum semper. Morbi mattis, augue at fringilla posuere, metus eros tempus ligula, in dignissim ante dolor quis diam. Nam sit amet lacus nec risus ultrices iaculis. Duis posuere suscipit enim. Integer ut lacinia tellus. Nulla vitae neque sit amet eros tempor posuere. Phasellus magna elit, faucibus ac sodales quis, dictum non lectus. Integer consectetur felis lectus. Praesent sed dui dui. Curabitur tempor malesuada nibh vitae sagittis. Sed accumsan nulla tempor rutrum aliquet. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus volutpat lectus ac congue auctor. Vivamus est nulla, iaculis id lectus mollis, molestie rhoncus libero. Sed placerat metus non dui dignissim fermentum.
+                
+                Fusce eleifend sodales ante vitae pellentesque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut metus massa, tempor a sollicitudin sed, vulputate eget arcu. In hac habitasse platea dictumst. Vestibulum nec suscipit lectus. Pellentesque euismod mauris non ex gravida, vel ultricies lacus accumsan. Phasellus viverra, ligula a vestibulum convallis, sem massa pharetra leo, congue fringilla mi mi vel ex. Aenean eu nisl eu mi condimentum viverra.
+                
+                Aenean in mollis mi. Etiam ultrices in justo commodo facilisis. Fusce eleifend volutpat ornare. Vestibulum vel turpis turpis. Aenean in eleifend velit, eget semper ligula. Phasellus augue justo, ullamcorper vel enim non, accumsan ultrices lacus. Aliquam pulvinar luctus urna, ut consequat ex faucibus non.</p>
+
+        </section>
+
+        <section id="continut">
+            <h2>Continut</h2>
+            <p class="intro">Continut</p>
+
+        </section>
+
+        <section id="date_site">
+            <h2>Date Site</h2>
+            <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin dolor non pretium aliquam. Sed sapien lectus, semper luctus orci eu, blandit molestie sem. Nulla facilisi. Curabitur mollis enim nulla, id pretium magna aliquet a. Etiam pulvinar orci eu lobortis imperdiet. Fusce pharetra ultricies magna eu placerat. Vestibulum hendrerit, turpis sit amet euismod facilisis, diam enim rutrum tortor, quis iaculis velit lectus in odio. Sed malesuada porttitor condimentum. Nunc eget lectus ac tortor posuere vestibulum efficitur at libero. Etiam molestie mattis mattis. Sed fermentum erat nec commodo lobortis. Vestibulum tincidunt venenatis felis quis gravida. In ultricies pharetra vulputate.
+
+                Duis hendrerit libero non lectus tempor, sit amet accumsan nisl scelerisque. Aenean tincidunt efficitur metus, sit amet rutrum orci feugiat non. Morbi sed diam quis lectus ullamcorper ultrices quis non nunc. Nullam vel nulla molestie, rhoncus nisi in, ultricies enim. Quisque dictum mollis mauris sed eleifend. Donec a ornare dolor. Aenean sagittis vitae risus tempor varius. Mauris sit amet arcu eu ipsum eleifend placerat. Aliquam quam sem, convallis sit amet ultrices sit amet, varius eu velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                
+                Fusce sagittis felis eu elementum semper. Morbi mattis, augue at fringilla posuere, metus eros tempus ligula, in dignissim ante dolor quis diam. Nam sit amet lacus nec risus ultrices iaculis. Duis posuere suscipit enim. Integer ut lacinia tellus. Nulla vitae neque sit amet eros tempor posuere. Phasellus magna elit, faucibus ac sodales quis, dictum non lectus. Integer consectetur felis lectus. Praesent sed dui dui. Curabitur tempor malesuada nibh vitae sagittis. Sed accumsan nulla tempor rutrum aliquet. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus volutpat lectus ac congue auctor. Vivamus est nulla, iaculis id lectus mollis, molestie rhoncus libero. Sed placerat metus non dui dignissim fermentum.
+                
+                Fusce eleifend sodales ante vitae pellentesque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut metus massa, tempor a sollicitudin sed, vulputate eget arcu. In hac habitasse platea dictumst. Vestibulum nec suscipit lectus. Pellentesque euismod mauris non ex gravida, vel ultricies lacus accumsan. Phasellus viverra, ligula a vestibulum convallis, sem massa pharetra leo, congue fringilla mi mi vel ex. Aenean eu nisl eu mi condimentum viverra.
+                
+                Aenean in mollis mi. Etiam ultrices in justo commodo facilisis. Fusce eleifend volutpat ornare. Vestibulum vel turpis turpis. Aenean in eleifend velit, eget semper ligula. Phasellus augue justo, ullamcorper vel enim non, accumsan ultrices lacus. Aliquam pulvinar luctus urna, ut consequat ex faucibus non.</p>
+
+        </section>
+
+        <section id="utilizatori">
+            <h2>Utilizatori</h2>
+            <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin dolor non pretium aliquam. Sed sapien lectus, semper luctus orci eu, blandit molestie sem. Nulla facilisi. Curabitur mollis enim nulla, id pretium magna aliquet a. Etiam pulvinar orci eu lobortis imperdiet. Fusce pharetra ultricies magna eu placerat. Vestibulum hendrerit, turpis sit amet euismod facilisis, diam enim rutrum tortor, quis iaculis velit lectus in odio. Sed malesuada porttitor condimentum. Nunc eget lectus ac tortor posuere vestibulum efficitur at libero. Etiam molestie mattis mattis. Sed fermentum erat nec commodo lobortis. Vestibulum tincidunt venenatis felis quis gravida. In ultricies pharetra vulputate.
+
+                Duis hendrerit libero non lectus tempor, sit amet accumsan nisl scelerisque. Aenean tincidunt efficitur metus, sit amet rutrum orci feugiat non. Morbi sed diam quis lectus ullamcorper ultrices quis non nunc. Nullam vel nulla molestie, rhoncus nisi in, ultricies enim. Quisque dictum mollis mauris sed eleifend. Donec a ornare dolor. Aenean sagittis vitae risus tempor varius. Mauris sit amet arcu eu ipsum eleifend placerat. Aliquam quam sem, convallis sit amet ultrices sit amet, varius eu velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                
+                Fusce sagittis felis eu elementum semper. Morbi mattis, augue at fringilla posuere, metus eros tempus ligula, in dignissim ante dolor quis diam. Nam sit amet lacus nec risus ultrices iaculis. Duis posuere suscipit enim. Integer ut lacinia tellus. Nulla vitae neque sit amet eros tempor posuere. Phasellus magna elit, faucibus ac sodales quis, dictum non lectus. Integer consectetur felis lectus. Praesent sed dui dui. Curabitur tempor malesuada nibh vitae sagittis. Sed accumsan nulla tempor rutrum aliquet. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus volutpat lectus ac congue auctor. Vivamus est nulla, iaculis id lectus mollis, molestie rhoncus libero. Sed placerat metus non dui dignissim fermentum.
+                
+                Fusce eleifend sodales ante vitae pellentesque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut metus massa, tempor a sollicitudin sed, vulputate eget arcu. In hac habitasse platea dictumst. Vestibulum nec suscipit lectus. Pellentesque euismod mauris non ex gravida, vel ultricies lacus accumsan. Phasellus viverra, ligula a vestibulum convallis, sem massa pharetra leo, congue fringilla mi mi vel ex. Aenean eu nisl eu mi condimentum viverra.
+                
+                Aenean in mollis mi. Etiam ultrices in justo commodo facilisis. Fusce eleifend volutpat ornare. Vestibulum vel turpis turpis. Aenean in eleifend velit, eget semper ligula. Phasellus augue justo, ullamcorper vel enim non, accumsan ultrices lacus. Aliquam pulvinar luctus urna, ut consequat ex faucibus non.</p>
+
+        </section>
+
+        <section id="date_utilizatori">
+            <h2>Date ulitizatori</h2>
+            <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin dolor non pretium aliquam. Sed sapien lectus, semper luctus orci eu, blandit molestie sem. Nulla facilisi. Curabitur mollis enim nulla, id pretium magna aliquet a. Etiam pulvinar orci eu lobortis imperdiet. Fusce pharetra ultricies magna eu placerat. Vestibulum hendrerit, turpis sit amet euismod facilisis, diam enim rutrum tortor, quis iaculis velit lectus in odio. Sed malesuada porttitor condimentum. Nunc eget lectus ac tortor posuere vestibulum efficitur at libero. Etiam molestie mattis mattis. Sed fermentum erat nec commodo lobortis. Vestibulum tincidunt venenatis felis quis gravida. In ultricies pharetra vulputate.
+
+                Duis hendrerit libero non lectus tempor, sit amet accumsan nisl scelerisque. Aenean tincidunt efficitur metus, sit amet rutrum orci feugiat non. Morbi sed diam quis lectus ullamcorper ultrices quis non nunc. Nullam vel nulla molestie, rhoncus nisi in, ultricies enim. Quisque dictum mollis mauris sed eleifend. Donec a ornare dolor. Aenean sagittis vitae risus tempor varius. Mauris sit amet arcu eu ipsum eleifend placerat. Aliquam quam sem, convallis sit amet ultrices sit amet, varius eu velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                
+                Fusce sagittis felis eu elementum semper. Morbi mattis, augue at fringilla posuere, metus eros tempus ligula, in dignissim ante dolor quis diam. Nam sit amet lacus nec risus ultrices iaculis. Duis posuere suscipit enim. Integer ut lacinia tellus. Nulla vitae neque sit amet eros tempor posuere. Phasellus magna elit, faucibus ac sodales quis, dictum non lectus. Integer consectetur felis lectus. Praesent sed dui dui. Curabitur tempor malesuada nibh vitae sagittis. Sed accumsan nulla tempor rutrum aliquet. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus volutpat lectus ac congue auctor. Vivamus est nulla, iaculis id lectus mollis, molestie rhoncus libero. Sed placerat metus non dui dignissim fermentum.
+                
+                Fusce eleifend sodales ante vitae pellentesque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut metus massa, tempor a sollicitudin sed, vulputate eget arcu. In hac habitasse platea dictumst. Vestibulum nec suscipit lectus. Pellentesque euismod mauris non ex gravida, vel ultricies lacus accumsan. Phasellus viverra, ligula a vestibulum convallis, sem massa pharetra leo, congue fringilla mi mi vel ex. Aenean eu nisl eu mi condimentum viverra.
+                
+                Aenean in mollis mi. Etiam ultrices in justo commodo facilisis. Fusce eleifend volutpat ornare. Vestibulum vel turpis turpis. Aenean in eleifend velit, eget semper ligula. Phasellus augue justo, ullamcorper vel enim non, accumsan ultrices lacus. Aliquam pulvinar luctus urna, ut consequat ex faucibus non.</p>
+
+        </section>
+
+        
+        <section id="promotii">
+            <h2>Promotii!</h2>
+            <article>
+                <h3>Super oferta de black friday</h3>
+                <!--TASK 10 e)-->
+                <p><s>Magazinul nostru are reduceri de 10% la orice produs achizitionat vinerea.</s></p>
+                <p><ins>Magazinul nostru are reduceri de 20% la orice produs achizitionat vinerea.</ins></p>
+                <!--TASK 12-->
+                <details>
+                    <summary>Detalii</summary>
+                    Oferta este valabila pe tot parcursul lunii noiembrie, doar vinerea.
+                </details>
+            </article>
+        </section>
+        <section id="intrebari">
+            <h2>Pune-ne o intrebare!</h2>
+        
+        </section>
+        <section id="prezentare">
+            <!--TASK 10 a)-->
+            <h2>Bine ai venit in magazinul nostru!  </h2>
+            <p><b>Jocurile</b> <b>lego</b> sunt atat pentru <b>copii</b>, cat si pentru adulti. Noi incercam sa bucuram pe toata lumea cu ajutorul acestora. Ocupa-ti <b>timpul</b> liber distrandu-te cu un <b>joc</b> de <b>lego</b>!</p>
+            <p>In magazinul nostru veti gasi tot felul de jocuri <b>lego</b>, pentru toate varstele, de la dificultate usoara, pana la dificultate grea.  </p>
+            <!--TASK 11-->
+            <p>Magazinul este asociat cu: <a href="https://lego.com" target="_blank">LEGO.COM</a> </p>
+        </section>
+        
+        <section id="noutati">
+            <h2>Aici veti gasi ultimele noutati despre jocurile lego!</h2>
+            <p>In aceasta sectiune veti afla despre noile jocuri de lego aparute, evenimente organizate de magazinul nostru si multe altele.</p>
+        </section>
+        <section id="galerie">
+            <h2>Mai jos puteti vedea poze cu jocuri de lego trimise de la clientii nostri.</h2>
+            <!-- poze -->
+            
+        </section>
+        <section id="tema">
+            <h2>Seturi dupa tema</h2>
+            <ul>
+                <li>Disney</li>
+                <li>Clasic</li>
+                <li>DC</li>
+                <li>Marvel</li>
+                <li>City</li>
+                <iframe class="frame" name="iframe" width="100%" height="500" src="https://www.youtube.com/embed/29WOrgRakXQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               
+                <!--le pun hyperlink catre produse-->
+            </ul>
+            <div class="flex-container">
+                <a href="https://www.youtube.com/embed/29WOrgRakXQ" target="iframe"><button class="button-iframe">Disney</button></a>
+                <a href="https://www.youtube.com/embed/AOPNekHbWQM" target="iframe"><button class="button-iframe">Clasic</button></a>
+                <a><button class="button-iframe">Marvel</button> </a>
+              </div>
+            <!--TASK 11 IFRAME-->
+            
+            
+        </section>
+
+        <section id="varsta">
+            <!--TASK 8-->
+            <h2>Categorii de varsta:</h2>
+            <ul>
+                <li>2+</li>
+                <li>4+</li>
+                <li>6+</li>
+                <li>9+</li>
+                <li>13+</li>
+                <li>18+</li>
+                <!--le pun hyperlink catre produse-->
+            </ul>
+             <!--TASK 10 c)-->
+            <p><strong>Atentie! Produsele sunt impartite pe categorie de varsta in functie de dificultate. Pentru copii mici se recomanda cumpararea produselor strict pentru varsta lor, deoarece acestea pot avea piese mici pe care copii le pot inghiti.</strong> </p>
+        </section>
+    
+             </div>
+        </main>
+    <footer>
+        
+            <!--TASK 11-->
+        <a href="#top">Inceputul paginii</a>
+
+            <!--TASK 13-->
+         <address>
+            Numar de telefon: <a href="tel:+40712345678">+40712345678</a> <br>
+            Adresa: <a href="">Calea Mosilor 260</a><br>
+            Email: <a href="mailto:legobin@example.com">LEGOBIN</a>
+        </address>
+            <!--TASK 14-->
+            <p><small>Copyright &copy;2021 Honciu Bogdan-Cristian</small></p>
+            <p>Site creat in data de: <time  datetime="2021-10-09"> 09 Octombrie 2021 </time></p>
+    </footer>
+</body>
+</html>
